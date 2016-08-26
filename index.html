@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Visualizations</title>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="audio.js"></script>
+</head>
+
+<body>
+  <audio src="the_xx_-_intro.mp3" id="audio"></audio>
+  <div id="controls">
+    <button onclick="document.getElementById('audio').play()">Play the Audio</button>
+    <button onclick="document.getElementById('audio').pause()">Pause the Audio</button>
+    <button onclick="document.getElementById('audio').volume+=0.1">Increase Volume</button>
+    <button onclick="document.getElementById('audio').volume-=0.1">Decrease Volume</button>
+  </div>
+  <div id="display" style="background-color: #F8F8F8;"></div>
+</body>
+
+</html>
